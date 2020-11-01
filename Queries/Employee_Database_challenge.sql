@@ -36,7 +36,8 @@ ORDER BY title_count DESC;
 
 
 -- Create Mentorship Table based on BirthDate, Dept to date(current employees only)
-SELECT DISTINCT ON (employees.emp_no)
+SELECT 
+DISTINCT ON (employees.emp_no)
           employees.emp_no,
 		            employees.first_name,
 					employees.last_name,
@@ -51,5 +52,6 @@ ON employees.emp_no = titles.emp_no
 INNER JOIN dept_emp
 ON dept_emp.emp_no = employees.emp_no
 WHERE dept_emp.to_date = '9999-01-01' and employees.birth_date BETWEEN '1965-01-01' AND '1965-12-31'
-Order By employees.emp_no, dept_emp.from_date desc;
+-- Order by Titles.To_date to get the most recent job title displaying
+Order By employees.emp_no, titles.to_date desc;
 
