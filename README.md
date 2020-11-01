@@ -1,7 +1,7 @@
 # Pewlett-Hackard-Analysis
 
 ## Project Overview
-I was tasked by Pewlett Hackard with assisting HR in finding upcoming retirees and employees eligible to participate in the mentorship program. To complete this request we executed the following:
+I was tasked by Pewlett Hackard with assisting HR in finding upcoming retirees and employees eligible to participate in the mentorship program. To complete this request I executed the following:
 
 1. Created a table with the number of retiring employees by title. 
 2. Created a table with the number of employees eligible for the mentorship program by birthdate. 
